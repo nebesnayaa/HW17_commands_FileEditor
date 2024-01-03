@@ -1,0 +1,29 @@
+﻿<Window x:Class="HW17_file_editor.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW17_file_editor"
+        mc:Ignorable="d"
+        Title="Registration" Height="120" Width="300"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Enter Key:" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox x:Name="accessModeTextBox" Grid.Column="1" Grid.ColumnSpan="2" Margin="5 8"
+                 TextChanged="accessModeTextBox_TextChanged"/>
+        
+        <Button x:Name="registerButton" Content="Register" Grid.Column="1" Grid.Row="1" Click="registerButton_Click" IsEnabled="false" Margin="5 10"/>
+        <Button Content="Cancel" Grid.Column="2" Grid.Row="1" Click="cancelButton_Click" Margin="5 10"/>
+    </Grid>
+</Window>
+        
